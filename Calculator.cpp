@@ -1,34 +1,41 @@
+#include <iostream> 
 using namespace std;
 
-void main(){
+int calculator();
+
+int main() {
    int input;
 
-    cout << "What function would you like to use /n 1. Calculator /n 2. Suprise" << endl;
+    cout << "What function would you like to use \n 1. Calculator \n 2. Suprise" << endl;
     cin >> input;
-    if{
-        cin = 1; 
+    if  (input == 1){
+       
         calculator();
     }
-    else{
-        cin = 2;
+    else if (input == 2){
+        ;
         cout << "Suprise!" << endl;
     }
+    else {
+        cout << "Smelly boi. Enter either 1 or 2" << endl;
+    }
  return 0;   
+}
 
 
-
-int calculator(){
+int calculator() {
     double num1, num2;
     char operation;
 
-//user input
 
-cout << "Enter first number:";
-cin>> num1;
-cout << "Enter and operator:"
-cin >> operation;
-cout >> "Enter second number:"
-cin>>num2;
+    //user input
+
+    cout << "Enter first number:";
+    cin>> num1;
+    cout << "Enter and operator:";
+    cin >> operation;
+    cout << "Enter second number:";
+    cin >> num2;
 
 switch (operation){
 //Addition Operation
@@ -45,16 +52,16 @@ switch (operation){
     break;
 
     case '/':
-     if num2 != 0 {
+     if (num2 != 0) {
       cout << "Result:" << num1/num2 << endl;
      }
      else{ 
       cout<< "Error: Division by zero" << endl;
      }
     break;
-default
+default:
     cout << "Error: Invalid Operator" << endl;
-
-return 0;
 }
+return 0;
+
 }
