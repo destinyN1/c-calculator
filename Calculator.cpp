@@ -17,9 +17,9 @@ int main() {
         cout << "Suprise!" << endl;
     }
     else {
-        cout << "Smelly boi. Enter either 1 or 2" << endl;
+        cout <<  "Enter either 1 or 2" << endl;
     }
- return 0;   
+ return 0;
 }
 
 
